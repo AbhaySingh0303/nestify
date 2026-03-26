@@ -1,55 +1,163 @@
-# Nestify - PG Management Application
+# Nestify – PG Management System
 
-A full-stack, comprehensive web application to manage paying guest operations with role-based dashboard for Admins and Tenants.
+A modern full-stack web application designed to simplify Paying Guest (PG) accommodation management for both owners and tenants.
 
-## Features
-- JWT Authentication & Authorization
-- Admin role to manage rooms, tenants, incoming payments, and resolving complaints.
-- Tenant role to view room assignments, pay monthly rent, and raise complaints.
+---
+
+## Overview
+
+Nestify streamlines the process of managing PGs by providing features like:
+
+- Tenant onboarding and approval
+- Room allocation
+- Monthly rent payments
+- Complaint management
+- Dashboard insights
+
+Built with a scalable architecture, Nestify reduces manual work and improves transparency between owners and tenants.
+
+---
 
 ## Tech Stack
-- Frontend: React (Vite) + TailwindCSS (v4)
-- Backend: Node.js, Express.js
-- Database: MongoDB + Mongoose
 
-## Setup Instructions
+### Frontend
+- React.js (Vite)
+- Material UI
+- Axios
 
-### 1. Database Setup
-Ensure you have MongoDB installed and running on `mongodb://127.0.0.1:27017/nestify`.
+### Backend
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
 
-### 2. Backend
-1. Open a terminal and navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Seed the database with sample data:
-   ```bash
-   node seed.js
-   ```
-   *Seed data credentials:*
-   - Admin: `admin@nestify.com` / `123456`
-   - Tenant: `tenant@nestify.com` / `123456`
-4. Start the server:
-   ```bash
-   node server.js
-   ```
-   *Runs on port 5000 by default.*
+### Deployment
+- Frontend: Render (Static Site)
+- Backend: Render (Web Service)
 
-### 3. Frontend
-1. Open a new terminal and navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the Vite dev server:
-   ```bash
-   npm run dev
-   ```
-   *Runs on port 5173 by default.*
+---
+
+## Features
+
+### Authentication and Roles
+- Secure login and signup using JWT
+- Role-based access:
+  - Owner
+  - Tenant
+
+---
+
+### Owner Features
+- Add and manage tenants
+- Approve tenant requests using track ID
+- Assign rooms
+- Upload QR code for payments
+- Monitor rent status
+- View complaints
+
+---
+
+### Tenant Features
+- Join PG using track ID
+- View room details
+- Pay monthly rent
+- Raise complaints
+- Track payment history
+
+---
+
+### Payment System
+- Monthly rent is automatically assigned
+- Owner provides QR code for payment
+- Tenants can pay rent using the provided QR
+
+---
+
+### Dashboard
+- Overview of:
+  - Tenants
+  - Rooms
+  - Payments
+  - Complaints
+
+---
+
+## Project Structure
+nestify/
+│
+├── frontend/ # React (Vite)
+│ ├── src/
+│ ├── public/
+│ └── dist/ # Build output
+│
+├── backend/ # Node.js + Express
+│ ├── models/
+│ ├── routes/
+│ ├── controllers/
+│ └── middleware/
+│
+└── README.md
+
+
+---
+
+## Installation and Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/nestify.git
+cd nestify
+2. Backend Setup
+cd backend
+npm install
+npm start
+
+Create a .env file in the backend directory:
+
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
+3. Frontend Setup
+cd frontend
+npm install
+npm run dev
+Deployment (Render)
+Frontend Settings
+
+#Build Command:
+
+cd frontend && npm install && npm run build
+
+#Publish Directory:
+
+frontend/dist
+Environment Variables
+Backend
+MONGO_URI
+JWT_SECRET
+PORT
+
+##Future Improvements
+Integration with payment gateways such as Razorpay or Stripe
+Email and SMS notifications
+Room availability analytics
+Mobile application version
+Advanced complaint handling system
+
+##Contributing
+
+Contributions are welcome. Fork the repository and submit a pull request
+
+##Author
+
+Abhay
+B.Tech Student | Full Stack Developer
+
+
+---
+
+If you want next-level polish, I can also:
+- Add **live demo + screenshots section**
+- Add **API documentation section**
+- Or convert this into a **perfect GitHub portfolio README**
+
+Just tell me.
