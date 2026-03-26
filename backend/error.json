@@ -1,0 +1,1 @@
+{"message":"E11000 duplicate key error collection: nestify.rooms index: roomNumber_1 dup key: { roomNumber: \"Smoke101\" }"}

@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "69c01b6aa9b0e7e76c3668e6",
+    "userId": "69c01b6aa9b0e7e76c3668df",
+    "roomId": "69c01b6aa9b0e7e76c3668e3",
+    "contactNumber": "1234567890",
+    "joiningDate": "2026-03-22T16:40:10.893Z",
+    "createdAt": "2026-03-22T16:40:10.894Z",
+    "updatedAt": "2026-03-22T16:40:10.894Z",
+    "__v": 0
+  },
+  {
+    "_id": "69c0308d46a594f1763c6304",
+    "user": "69c0300146a594f1763c62fd",
+    "pg": "69c02d117478006f4e50a20a",
+    "joiningDate": "2026-03-22T18:10:21.419Z",
+    "createdAt": "2026-03-22T18:10:21.420Z",
+    "updatedAt": "2026-03-22T18:15:30.546Z",
+    "__v": 0,
+    "contactNumber": "1234567891",
+    "emergencyContact": "3216548894",
+    "room": "69c030cb46a594f1763c6344"
+  }
+]

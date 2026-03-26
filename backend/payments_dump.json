@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "69c01b6ba9b0e7e76c3668ee",
+    "tenantId": "69c01b6aa9b0e7e76c3668e6",
+    "amount": 5000,
+    "month": "Nov 2023",
+    "status": "Paid",
+    "createdAt": "2026-03-22T16:40:11.414Z",
+    "updatedAt": "2026-03-22T16:40:11.667Z",
+    "__v": 0,
+    "paymentDate": "2026-03-22T16:40:11.667Z"
+  }
+]

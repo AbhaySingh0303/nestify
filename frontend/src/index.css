@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-error-container: #ffdad6;
+  --color-primary-fixed-dim: #8dd0e9;
+  --color-on-error-container: #93000a;
+  --color-tertiary-fixed-dim: #ffb68f;
+  --color-on-tertiary-fixed: #331200;
+  --color-secondary-fixed-dim: #b8c9d2;
+  --color-surface-container-high: #e6e8ea;
+  --color-on-surface: #191c1e;
+  --color-secondary: #516169;
+  --color-on-primary-container: #8ed1ea;
+  --color-on-primary-fixed-variant: #004e61;
+  --color-on-secondary-fixed: #0e1e24;
+  --color-surface-container-highest: #e1e3e4;
+  --color-on-secondary-container: #57676f;
+  --color-on-tertiary-fixed-variant: #773200;
+  --color-tertiary-fixed: #ffdbca;
+  --color-on-error: #ffffff;
+  --color-surface: #f8f9fb;
+  --color-on-primary: #ffffff;
+  --color-on-surface-variant: #40484c;
+  --color-outline: #70787d;
+  --color-error: #ba1a1a;
+  --color-surface-dim: #d8dadc;
+  --color-primary-container: #005b71;
+  --color-surface-container: #eceef0;
+  --color-on-tertiary-container: #ffb892;
+  --color-on-tertiary: #ffffff;
+  --color-on-background: #191c1e;
+  --color-background: #f8f9fb;
+  --color-surface-tint: #19667d;
+  --color-on-secondary-fixed-variant: #394951;
+  --color-surface-container-low: #f2f4f6;
+  --color-tertiary: #672a00;
+  --color-secondary-fixed: #d4e5ef;
+  --color-on-secondary: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-container: #d4e5ef;
+  --color-primary-fixed: #b7eaff;
+  --color-inverse-on-surface: #eff1f3;
+  --color-primary: #004253;
+  --color-inverse-surface: #2e3132;
+  --color-surface-variant: #e1e3e4;
+  --color-inverse-primary: #8dd0e9;
+  --color-surface-bright: #f8f9fb;
+  --color-on-primary-fixed: #001f28;
+  --color-outline-variant: #bfc8cc;
+  --color-tertiary-container: #8b3c00;
+
+  --font-headline: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-label: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface antialiased;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-panel, .glass-effect {
+  background: rgba(248, 249, 251, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, #004253 0%, #005b71 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
